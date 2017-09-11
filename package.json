@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "bundle:webpack": "webpack",
-    "bundle:browserify": "browserify index.js > bundle.js"
+    "bundle:browserify": "browserify index.js > bundle.browserify.js"
   },
   "keywords": [],
   "author": "",
