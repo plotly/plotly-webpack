@@ -7,7 +7,7 @@ module.exports = {
     module: {
         loaders: [
             {
-                test: /node_modules/,
+                test: /\.js$/,
                 loader: 'ify-loader'
             }
         ]
