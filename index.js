@@ -4,6 +4,6 @@ console.log(glsl(`
   precision mediump float;
 
   void main () {
-    gl_FragColor = ones();
+    gl_FragColor = vec4(1.0);
   }
 `));
