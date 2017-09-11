@@ -1,0 +1,17 @@
+{
+  "name": "plotly-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ify-loader": "^1.0.4",
+    "plotly.js": "^1.30.1",
+    "webpack": "^3.5.6"
+  }
+}
