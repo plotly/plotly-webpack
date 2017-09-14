@@ -1,11 +1,8 @@
-var glsl = require('glslify');
+var Plotly = require('plotly.js');
+var gd = document.createElement('div');
+document.body.appendChild(gd);
 
-console.log(glsl(`
-  precision mediump float;
-
-  #pragma glslify: ones = require(./ones)
-
-  void main () {
-    gl_FragColor = vec4(1.0);
-  }
-`));
+Plotly.plot(gd, [{
+    x: [1, 2, 3],
+    y: [2, 1, 4]
+}]);
