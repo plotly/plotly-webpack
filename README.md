@@ -2,13 +2,27 @@
 
 A repo to demonstrate bundling [plotly.js](https://github.com/plotly/plotly.js), either with browserify or webpack. Webpack bundling requires [ify-loader@1.1.0+](https://github.com/browserify/ify-loader) for the glslify, cwise, and brfs browserify transforms.
 
+## Input
+
+The input for this example is a simple `index.js` that creates a plot:
+
+```javascript
+var Plotly = require('plotly.js');
+var gd = document.createElement('div');
+document.body.appendChild(gd);
+
+Plotly.plot(gd, [{x: [1, 2, 3], y: [2, 1, 4]}]);
+```
+
 ## To bundle with browserify:
 
 ```bash
 $ npm install
-$ npm run bundle:browserify
+$ browserify index.js > bundle.browserify.js
 $ open index.browserify.html
 ```
+
+In this example repo, you may run this command by running `npm run bundle:browserify`.
 
 ## To bundle with webpack:
 
@@ -37,6 +51,8 @@ $ npm install
 $ npm run bundle:webpack
 $ open index.webpack.html
 ```
+
+In this example repo, `npm run bundle:webpack` runs `webpack` with the given config file in `webpack.config.js`.
 
 ## License
 
