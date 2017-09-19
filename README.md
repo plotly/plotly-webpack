@@ -7,6 +7,7 @@ A repo to demonstrate bundling [plotly.js](https://github.com/plotly/plotly.js),
 The input for this example is a simple `index.js` that creates a plot:
 
 ```javascript
+// index.js:
 var Plotly = require('plotly.js');
 var gd = document.createElement('div');
 document.body.appendChild(gd);
@@ -22,7 +23,7 @@ $ browserify index.js > bundle.browserify.js
 $ open index.browserify.html
 ```
 
-In this example repo, you may run the above command by running `npm run bundle:browserify`.
+In this example repo, you may run the above command by running [`npm run bundle:browserify`](https://github.com/rreusser/plotly-webpack/blob/ec0c5588438dc5a6574e666330452145d05f086b/package.json#L8).
 
 ## To bundle with webpack:
 
@@ -44,7 +45,7 @@ module.exports = {
 }
 ```
 
-In this example repo, `npm run bundle:webpack` runs `webpack` which then uses the config in `webpack.config.js`:
+In this example repo, [`npm run bundle:webpack`](https://github.com/rreusser/plotly-webpack/blob/ec0c5588438dc5a6574e666330452145d05f086b/package.json#L7) runs `webpack` which then uses the config in [`webpack.config.js`](https://github.com/rreusser/plotly-webpack/blob/master/webpack.config.js):
 
 ```bash
 $ npm install
