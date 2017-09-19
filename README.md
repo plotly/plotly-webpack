@@ -22,7 +22,7 @@ $ browserify index.js > bundle.browserify.js
 $ open index.browserify.html
 ```
 
-In this example repo, you may run this command by running `npm run bundle:browserify`.
+In this example repo, you may run the above command by running `npm run bundle:browserify`.
 
 ## To bundle with webpack:
 
@@ -52,7 +52,7 @@ $ npm run bundle:webpack
 $ open index.webpack.html
 ```
 
-In this example repo, `npm run bundle:webpack` runs `webpack` with the given config file in `webpack.config.js`.
+In this example repo, `npm run bundle:webpack` runs `webpack` which then uses the config in `webpack.config.js`.
 
 ## License
 
