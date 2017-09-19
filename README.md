@@ -15,17 +15,7 @@ document.body.appendChild(gd);
 Plotly.plot(gd, [{x: [1, 2, 3], y: [2, 1, 4]}]);
 ```
 
-## To bundle with browserify:
-
-```bash
-$ npm install
-$ browserify index.js > bundle.browserify.js
-$ open index.browserify.html
-```
-
-In this example repo, you may run the above command by running [`npm run bundle:browserify`](https://github.com/rreusser/plotly-webpack/blob/ec0c5588438dc5a6574e666330452145d05f086b/package.json#L8).
-
-## To bundle with webpack:
+## Bundling with webpack:
 
 Bundling with webpack requires [ify-loader@1.1.0+](https://github.com/browserify/ify-loader). You can add a loader as follows:
 
@@ -54,6 +44,16 @@ $ open index.webpack.html
 ```
 
 See [building plotly.js with webpack](https://github.com/plotly/plotly.js#building-plotlyjs-with-webpack) for more details.
+
+## Bundling with browserify:
+
+```bash
+$ npm install
+$ browserify index.js > bundle.browserify.js
+$ open index.browserify.html
+```
+
+In this example repo, you may run the above command by running [`npm run bundle:browserify`](https://github.com/rreusser/plotly-webpack/blob/ec0c5588438dc5a6574e666330452145d05f086b/package.json#L8).
 
 ## License
 
