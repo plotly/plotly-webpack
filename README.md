@@ -44,7 +44,7 @@ module.exports = {
 }
 ```
 
-See [building plotly.js with webpack](https://github.com/plotly/plotly.js#building-plotlyjs-with-webpack) for more details.
+In this example repo, `npm run bundle:webpack` runs `webpack` which then uses the config in `webpack.config.js`:
 
 ```bash
 $ npm install
@@ -52,7 +52,7 @@ $ npm run bundle:webpack
 $ open index.webpack.html
 ```
 
-In this example repo, `npm run bundle:webpack` runs `webpack` which then uses the config in `webpack.config.js`.
+See [building plotly.js with webpack](https://github.com/plotly/plotly.js#building-plotlyjs-with-webpack) for more details.
 
 ## License
 
