@@ -53,7 +53,7 @@ module.exports = {
 
 In the above configuration, `ify-loader` looks at the `browesrify.transform` field of at each nested module's `package.json` for the browserify transforms that need to be run. `transform-loader`, on the other hand, applies the specified transform to all files matching the pattern `/\.js$/`.
 
-To further optimize and reduce the bundle size, you may include [additional plugins](https://webpack.js.org/plugins/). For example:
+To further optimize and reduce the bundle size, you may include [additional optimization plugins](https://webpack.js.org/plugins/). For example:
 
 ```js
 // webpack.config.js:
