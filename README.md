@@ -84,6 +84,8 @@ See [building plotly.js with webpack](https://github.com/plotly/plotly.js#buildi
 
 ## Bundling with browserify
 
+Bundling with browserify is somewhat easier since basic transform support is built-in.
+
 ```bash
 $ npm install
 $ browserify index.js > bundle.browserify.js
