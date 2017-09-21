@@ -25,6 +25,8 @@ Plotly.plot(gd, [{
 }]);
 ```
 
+Note that this strategy may reduce the bundle size from roughtly 2.2MB for the CDN version of [plotly-latest.min.js](https://cdn.plot.ly/plotly-latest.min.js) to roughly 615kb or 618kb for the bare-bones version of plotly.js using webpack or browserify, respectively.
+
 ## Bundling with webpack
 
 Bundling with webpack requires [ify-loader@1.1.0+](https://github.com/browserify/ify-loader) for the glslify, cwise, and brfs browserify transforms. Additionally, you may wish to use [transform-loader](https://github.com/webpack-contrib/transform-loader) to run plotly.js's custom [compress\_attributes](https://github.com/plotly/plotly.js/blob/master/tasks/util/compress_attributes.js) text descriptions from the plot schema that aren't needed to create and view plots. You can add these loaders as follows:
