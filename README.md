@@ -1,4 +1,4 @@
-# Bundling plotly.js with webpack or browserify
+# Bundling plotly.js for production with webpack or browserify
 
 A repo to demonstrate bundling [plotly.js](https://github.com/plotly/plotly.js), either with browserify or webpack.
 
