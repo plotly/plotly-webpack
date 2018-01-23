@@ -109,4 +109,4 @@ $ browserify \
 
 ## License
 
-&copy; 2017 Ricky Reusser. MIT License.
+&copy; 2017 Plotly, Inc. MIT License.
