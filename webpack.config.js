@@ -4,27 +4,18 @@ module.exports = {
   entry: "./index.js",
   output: {
     path: __dirname,
-    filename: "bundle.webpack.js"
+    filename: "bundle.js"
   },
   module: {
     rules: [
+      process.env.NODE_ENV === 'production' ? { test: /\.js$/, use: 'babel-loader' } : {},
       {
         test: /\.js$/,
-        use: 'ify-loader',
+        use: [
+          'ify-loader',
+          'transform-loader?plotly.js/tasks/util/compress_attributes.js',
+          ]
       },
-      {
-        test: /\.js$/,
-        use: 'transform-loader?plotly.js/tasks/util/compress_attributes.js',
-      }
     ]
-  },
-  plugins: [
-    new webpack.DefinePlugin({'process.env.NODE_ENV': '"production"'}),
-    new webpack.optimize.UglifyJsPlugin({
-      ie8: false,
-      mangle: {
-        except: ['$super', '$', 'exports', 'require']
-      }
-    })
-  ]
+  }
 };
