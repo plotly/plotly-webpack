@@ -1,6 +1,14 @@
 # Bundling [plotly.js](https://github.com/plotly/plotly.js) with Webpack
 
-The `package.json` file in this repo shows the minimal set of requirements to use the included `webpack.config.js` to bundle plotly.js for either development or production. The resulting `bundle.js` file is based on `index.js` and can be validated by opening `index.html`.
+## The easy way (recommended)
+
+The easiest way to use `plotly.js` in an app bundled by webpack is just to install it via `npm install plotly.js` and then `require()` or `import` from `'plotly.js/dist/plotly'` instead of from `'plotly.js'`. Doing this will get you a complete version of `plotly.js` (i.e. all chart types) precompiled to browser-friendly ES5 that will work out of the box with pretty much any Webpack configuration.
+
+If you don't want all of `plotly.js` because it's too big (minified it comes in over 2Mb) you can instead load a precompiled [partial bundle](https://github.com/plotly/plotly.js/blob/master/dist/README.md#partial-bundles) from `plotly.js/dist/BUNDLENAME`.
+
+## The customization way
+
+**If neither the full bundle nor any of the partial bundles meet your specific needs**, then you should consider putting your own customized bundle together and if you want to use Webpack you'll have to follow the instructions here. The `package.json` file in this repo shows the minimal set of requirements to use the included `webpack.config.js` to bundle plotly.js for either development or production. The resulting `bundle.js` file is based on `index.js` and can be validated by opening `index.html`.
 
 Usage (works with NPM or Yarn):
 
