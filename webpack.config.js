@@ -8,7 +8,6 @@ module.exports = {
   },
   module: {
     rules: [
-      process.env.NODE_ENV === 'production' ? { test: /\.js$/, use: 'babel-loader' } : {},
       {
         test: /\.js$/,
         use: [
