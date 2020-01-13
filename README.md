@@ -16,8 +16,8 @@ Usage (works with NPM or Yarn):
 
 ```bash
 npm install
-npm run webpack-dev   #takes ~10s for a 5.9MB bundle
-npm run webpack-prod  #takes ~60s for a 2.2MB bundle
+npm run webpack-dev   #takes ~10s for a 7.9MB bundle
+npm run webpack-prod  #takes ~60s for a 3.0MB bundle
 ```
 
 ### Explanations
