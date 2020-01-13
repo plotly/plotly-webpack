@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "webpack-dev": "webpack",
-    "webpack-prod": "NODE_ENV=production webpack -p"
+    "webpack-dev": "webpack --mode=development --devtool false",
+    "webpack-prod": "webpack --mode=production"
   },
   "keywords": [],
   "author": "",
@@ -13,9 +13,10 @@
   "devDependencies": {
     "ify-loader": "^1.1.0",
     "transform-loader": "^0.2.4",
-    "webpack": "^3.10.0"
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
   },
   "dependencies": {
-    "plotly.js": "^1.33.0"
+    "plotly.js": "^1.52.0"
   }
 }
